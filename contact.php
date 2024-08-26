@@ -1,21 +1,42 @@
 <?php
-if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+require 'vendor/autoload.php'; 
 
-    // Send email (example: modify this according to your server's email configuration)
-    $to = "austinbal28@gmail.com";
-    $subject = "Portfolio Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: $email";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
-    } else {
-        echo "Failed to send message.";
+if (isset($_POST['send'])) { // Correctly checking for the 'send' button
+    $email = new PHPMailer(true);
+
+    try {
+        $email->isSMTP();
+        $email->Host = 'smtp.gmail.com';
+        $email->SMTPAuth = true;
+        $email->Username = 'austinbal28@gmail.com'; // Your Gmail address
+        $email->Password = 'Jabulile@2001'; // Your Gmail password (ensure you've allowed less secure apps in Gmail settings)
+        $email->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+        $email->Port = 587;
+
+        // Sender info
+        $email->setFrom('austinbal28@gmail.com', 'Muxe');
+
+        // Recipient info
+        $email->addAddress($_POST['email']);
+        $email->isHTML(true);
+
+        // Email content
+        $email->Subject = $_POST['subject'];
+        $email->Body = $_POST['Message'];
+
+        $email->send();
+
+        echo "<script>
+                alert('Sent Successfully');
+                window.location.href = 'index.php';
+              </script>";
+    } catch (Exception $e) {
+        echo "<script>
+                alert('Message could not be sent. Mailer Error: {$email->ErrorInfo}');
+                window.location.href = 'index.php';
+              </script>";
     }
-} else {
-    echo "This script can only be run in a web context.";
 }
-?>
