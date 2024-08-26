@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a50000;
+    color: #333;
+    gap: 20px; /* Add space between sections */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(59, 36, 36, 0.226);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.skill-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box i {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.skill-box h4 {
+    margin-top: 10px;
+    color: #333;
+}
+
+
+
+#about, #experience, #education {
+    width: 100%; /* Set initial width */
+    height: 300px; /* Set initial height */
+    background-color: #d6d3d3;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#about:hover, #experience:hover, #education:hover {
+    transform: scale(1.05); /* Slightly enlarge the div on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    background-color: #f0f0f0; /* Lighten the background color on hover */
+}
+
+#about h2, #experience h2, #education h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+#about:hover h2, #experience:hover h2, #education:hover h2 {
+    color: #388E3C; /* Darker green on hover */
+}
+
+#about p, #experience p, #education p {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+#about:hover p, #experience:hover p, #education:hover p {
+    color: #555; /* Slightly darker text color on hover */
+}
+
+@media screen and (max-width: 600px) {
+    #about, #experience, #education {
+        width: 90%; /* Make the div responsive by adjusting width on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 30px;
+    }
+}
+
+#footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Reduced padding for a smaller footer */
+    font-size: 12px; /* Smaller font size */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+
+#footer p {
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
