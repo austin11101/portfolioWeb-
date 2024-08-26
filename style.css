@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #a50000;
+    background-color: #e5e5e5;
     color: #333;
-    gap: 20px; /* Add space between sections */
+    gap: 20px;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #7C93C3;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
@@ -17,13 +17,29 @@ header {
 section {
     padding: 20px;
     margin: 20px;
-    background-color: rgba(59, 36, 36, 0.226);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Background colors for each section */
+#about {
+    background-color: #55679C; /* Light grey-blue */
+}
+
+#experience {
+    background-color: #55679C; /* Soft peach */
+}
+
+#education {
+    background-color: #55679C; /* Light greenish-yellow */
+}
+
+#contact {
+    background-color: #55679C; /* Pale cyan */
+}
+
 h2 {
-    color: #4CAF50;
+    color: #fff;
 }
 
 ul {
@@ -56,25 +72,17 @@ button:hover {
     background-color: #45a049;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    width: 100%;
-    bottom: 0;
-}
-
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-evenly;
+    
 }
 
 .skill-box {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #f8f9fa;
+    background-color: #55679C;
 }
 
 .skill-box:hover {
@@ -89,15 +97,12 @@ footer {
 
 .skill-box h4 {
     margin-top: 10px;
-    color: #333;
+    color: #f5efef;
 }
 
-
-
 #about, #experience, #education {
-    width: 100%; /* Set initial width */
-    height: 300px; /* Set initial height */
-    background-color: #d6d3d3;
+    width: 100%; 
+    height: 300px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -106,20 +111,20 @@ footer {
 }
 
 #about:hover, #experience:hover, #education:hover {
-    transform: scale(1.05); /* Slightly enlarge the div on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-    background-color: #f0f0f0; /* Lighten the background color on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    background-color: #f0f0f0; 
 }
 
 #about h2, #experience h2, #education h2 {
     margin-top: 0;
     font-size: 20px;
-    color: #4CAF50;
+    color: #fff;
     transition: color 0.3s ease;
 }
 
 #about:hover h2, #experience:hover h2, #education:hover h2 {
-    color: #388E3C; /* Darker green on hover */
+    color: #388E3C; 
 }
 
 #about p, #experience p, #education p {
@@ -131,23 +136,23 @@ footer {
 }
 
 #about:hover p, #experience:hover p, #education:hover p {
-    color: #555; /* Slightly darker text color on hover */
+    color: #555; 
 }
 
 @media screen and (max-width: 600px) {
     #about, #experience, #education {
-        width: 90%; /* Make the div responsive by adjusting width on smaller screens */
-        height: auto; /* Allow height to adjust based on content */
+        width: 90%; 
+        height: auto; 
         padding: 30px;
     }
 }
 
 #footer {
-    background-color: #333; /* Dark background for the footer */
-    color: #fff; /* White text color */
+    background-color: #E1D7B7; 
+    color: #fff; 
     text-align: center;
-    padding: 10px 0; /* Reduced padding for a smaller footer */
-    font-size: 12px; /* Smaller font size */
+    padding: 10px 0; 
+    font-size: 12px; 
     position: relative;
     bottom: 0;
     width: 100%;
@@ -155,6 +160,6 @@ footer {
 }
 
 #footer p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     padding: 0;
 }
