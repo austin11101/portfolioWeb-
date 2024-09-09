@@ -9,15 +9,15 @@ if (isset($_POST['send'])) { // Correctly checking for the 'send' button
 
     try {
         $email->isSMTP();
-        $email->Host = 'smtp.gmail.com';
+        $email->Host = 'smtp.*****.com';
         $email->SMTPAuth = true;
-        $email->Username = 'austinbal28@gmail.com'; // Your Gmail address
-        $email->Password = 'Jabulile@2001'; // Your Gmail password (ensure you've allowed less secure apps in Gmail settings)
+        $email->Username = 'austin****@gmail.com'; // Your Gmail address
+        $email->Password = '*******'; // Your Gmail password (ensure you've allowed less secure apps in Gmail settings)
         $email->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
         $email->Port = 587;
 
         // Sender info
-        $email->setFrom('austinbal28@gmail.com', 'Muxe');
+        $email->setFrom('austin****@gmail.com', 'Muxe');
 
         // Recipient info
         $email->addAddress($_POST['email']);
