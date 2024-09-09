@@ -5,10 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Experience - Austin Baloyi</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .image-container {
+            margin: 20px 0;
+            padding: 10px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+    
+        .image-container:hover {
+            width: 100%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    
+        .image-container img {
+            max-width: 48%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    
 </head>
 <body>
     <header>
-        <h1>HTML Experience</h1>
+        <h1>Responsive HTML Experience</h1>
         <nav>
             <a href="index.html">Back to Portfolio</a>
         </nav>
@@ -16,14 +51,21 @@
 
     <section>
         <h2>Overview</h2>
-        <p>I have extensive experience in HTML, the foundational language of the web. Over the years, I've utilized HTML to create structured and semantic content for various web projects, including...</p>
+        <p>I have extensive experience in creating responsive HTML layouts, ensuring that web content is accessible and visually appealing across all devices, from desktops to mobile phones. My expertise in responsive design allows me to craft web pages that automatically adjust to different screen sizes and orientations, providing users with an optimal viewing experience.</p>
         <h2>Projects</h2>
         <ul>
-            <li>Project 1: Developed a responsive multi-page website using HTML5...</li>
-            <li>Project 2: Worked on a web application that required advanced HTML forms...</li>
-            <li>Project 3: Integrated multimedia content (videos, audio, etc.) into web pages...</li>
+            <li>Project 1: Responsive Multi-Page Website <br>Developed a multi-page website using responsive HTML5, ensuring seamless adaptation to various screen sizes. Implemented media queries and flexible grid systems to create a layout that maintains usability and aesthetics on both large and small screens.</li>
+            <li>Project 2: Advanced HTML Forms with Responsive Design <br>Worked on a web application that required complex HTML forms. Designed the forms using responsive HTML, ensuring that input fields, buttons, and other elements were easy to interact with on all devices. Integrated real-time validation and auto-adjusting layouts for mobile users.</li>
+            <li>Project 3: Multimedia Integration in Responsive Web Pages<br>Integrated multimedia content such as videos and audio into web pages using responsive HTML. Ensured that multimedia elements were scalable and maintained their quality and functionality across different devices, enhancing user engagement and experience.</li>
         </ul>
     </section>
+    <div class="image-container">
+        <img src="images/Screenshot from 2024-09-03 14-06-18.png" alt="Project Image 1">
+        <img src="images/Screenshot from 2024-09-03 14-48-44.png" alt="Project Image 2">
+        <img src="images/Screenshot from 2024-09-06 11-10-47.png" alt="Project Image 3">
+        <img src="images/Screenshot from 2024-09-06 11-10-37.png" alt="Project Image 4">
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2024 Austin Baloyi. All Rights Reserved.</p>
