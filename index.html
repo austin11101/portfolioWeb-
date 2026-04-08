@@ -3,237 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Baloyi Portfolio</title>
+    <title>Austin Baloyi - Full-Stack Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="text-center p-4">
-        <h1>Austin Baloyi</h1>
-        <p>UX/UI Designer | Front/Backend Developer | Game Designer</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#" style="color: #00d4ff; font-size: 1.5rem;">Austin Baloyi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section" style="background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.9) 100%), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=80') center/cover; min-height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; position: relative; margin-top: 60px;">
+        <div class="container" style="z-index: 2;">
+            <h1 style="font-size: 4rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Austin Baloyi</h1>
+            <p style="font-size: 1.8rem; margin-bottom: 2rem; color: #00d4ff; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">Full-Stack Software Engineer | API Integrations | AI & NLP</p>
+            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto 3rem; line-height: 1.8; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Building scalable solutions with Python, React, and cutting-edge technologies</p>
+            <a href="#about" class="btn btn-lg" style="background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%); color: white; border: none; padding: 12px 40px; font-weight: 600;">Explore My Work</a>
+        </div>
     </header>
-    <section class="container mt-5" style=" background-color: #1E2A5E;">
-    <div id="about" class="container text-center my-5">
-        <h2>About Me</h2>
-        <p>I am a passionate IT graduate with a focus on Multimedia Development and a strong interest in web and application development.I have developed a solid foundation in creating dynamic and visually appealing web applications. My expertise extends to working with PHP for server-side scripting and SQL for database management, enabling me to build robust and scalable web solutions.
-            I am also skilled in using modern frameworks and tools such as Bootstrap for responsive design and Git for version control. My proficiency in Python allows me to handle various programming tasks and develop efficient scripts. I am familiar with Node.js for building server-side applications and have experience with RESTful APIs to enhance functionality.
-            I have a keen interest in continuous learning and stay updated with the latest trends in web development including cross-platform compatibility. My goal is to leverage my skills and enthusiasm to contribute effectively as a Developer and to grow further in the field of web and development.
-            
-        </p>
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background: #0f0f1e; color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #00d4ff;">About Me</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">I'm a Full-Stack Software Engineer with hands-on experience building scalable web applications, integrating APIs, and deploying production-ready systems. I specialize in Python and JavaScript-based stacks, with strong experience in React, Flask, and backend system design.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">In my current role, I develop and maintain systems used in the public sector, where reliability, performance, and data integrity are critical. I've designed and integrated RESTful APIs, worked with third-party SDKs, and automated deployment pipelines using CI/CD tools.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">I also have experience working with AI and NLP technologies, including PyTorch and transformer-based models, integrating them into real-world applications to improve automation and data processing.</p>
+                </div>
+            </div>
         </div>
-        </section>
-    <section class="container mt-5" style=" background-color: #1E2A5E;">
-        <h2 class="text-center mb-4">Technical Skills</h2>
-        <div class="row">
-            
-            <div class="col-md-4 text-center" >
-                <a href="css.html" class="text-decoration-none">
-                    <div class="skill-box p-3 mb-3 border rounded">
-                        <i class="bi bi-filetype-css fa-3x"></i>
-                        <h4>CSS</h4>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #00d4ff;">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px; transition: all 0.3s;">
+                        <i class="fas fa-code" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">Languages</h4>
+                        <p>Python, JavaScript, PHP, Java, Dart, Bash</p>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-4 text-center">
-                <a href="bootstrap.html" class="text-decoration-none">
-                    <div class="skill-box p-3 mb-3 border rounded">
-                        <i class="bi bi-bootstrap fa-3x"></i>
-                        <h4>Bootstrap</h4>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-paint-brush" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">Frontend</h4>
+                        <p>React.js, Angular, HTML, CSS, Bootstrap</p>
                     </div>
-                </a>
-        
-        </div>
-
-        <div class="col-md-4 text-center">
-            <a href="responsive.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-html fa-3x"></i>
-                    <h4>Responsive HTML</h4>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="javascript.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-js fa-3x"></i>
-                    <h4>JavaScript</h4>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-server" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">Backend</h4>
+                        <p>Flask, Express.js, Node.js</p>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="git.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-git fa-3x"></i>
-                    <h4>Git</h4>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-plug" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">APIs & Integrations</h4>
+                        <p>REST APIs, JSON, Third-party SDKs</p>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="Mysql.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-database fa-3x"></i>
-                    <h4>SQL</h4>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-database" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">Databases</h4>
+                        <p>MySQL, SQLite, MongoDB, Firebase</p>
+                    </div>
                 </div>
-            </a>
-        </div>
-      
-        <div class="col-md-4 text-center">
-            <a href="nodejs.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-js fa-3x"></i>
-                    <h4>Node.JS</h4>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-cogs" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">DevOps</h4>
+                        <p>Git, GitLab CI/CD, Linux, SSH, Docker</p>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="rest-api.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-js fa-3x"></i>
-                    <h4>Rest API</h4>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-brain" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">AI/ML</h4>
+                        <p>PyTorch, Transformers, NLP, Deep Learning</p>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="php.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-php fa-3x"></i>
-                    <h4>PHP</h4>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="linux.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-linux fa-3x"></i>
-                    <h4>Linux</h4>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 text-center">
-            <a href="python.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-python fa-3x"></i>
-                    <h4>Python</h4>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-4 text-center">
-            <a href="python.html" class="text-decoration-none">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-filetype-python fa-3x"></i>
-                    <h4>JSON</h4>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <section class="container mt-5" style=" background-color: #1E2A5E;">
-        <h2 class="text-center mb-4">Soft Skills</h2>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-person-check fa-3x"></i>
-                    <h4>Communication</h4>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-lightbulb fa-3x"></i>
-                    <h4>Problem Solving</h4>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-clock fa-3x"></i>
-                    <h4>Time Management</h4>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-people fa-3x"></i>
-                    <h4>Teamwork</h4>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-arrow-repeat fa-3x"></i>
-                    <h4>Adaptability</h4>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="skill-box p-3 mb-3 border rounded">
-                    <i class="bi bi-gear fa-3x"></i>
-                    <h4>Technical Aptitude</h4>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="skill-card p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-tools" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">Other</h4>
+                        <p>System Design, Debugging, Performance Optimization</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="container text-center my-5">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>WordPress Developer:</strong> 2 years of hands-on experience through internships and freelance work.</li>
-            <li><strong>Remote Work:</strong> 1 year of experience working remotely, demonstrating strong time management and communication skills.</li>
-            <li><strong>Graphic Design:</strong> Proficient in creating visually appealing designs for web interfaces and multimedia content.</li>
-        </ul>
-    </section>
-
-    <section id="education" class="container text-center my-5">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Tshwane University of Technology (2019-2024):</strong> National Diploma in Information Technology, Specialization: Multimedia Development</li>
-            <li><strong>CTU Training Institution (May 2024):</strong> MS-900 Microsoft 365 Fundamentals Certificate</li>
-            <li><strong>EPP MHINGA HIGH SCHOOL (2016-2018):</strong> Grade 12 class representative</li>
-        </ul>
-    </section>
-
-    <section class="container mt-5" style=" background-color: #1E2A5E;">
-        <h2 class="text-center mb-4">Contact Details</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="contact-box p-3 mb-3 border rounded">
-                    <h4 style="color: #fff;">Email</h4>
-                    <p><a href="mailto:your-email@example.com" class="text-decoration-none">austinbal28@gmail.com</a></p>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5" style="background: #0f0f1e; color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #00d4ff;">Experience</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" alt="Experience" class="img-fluid rounded" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);">
+                </div>
+                <div class="col-lg-6">
+                    <div class="experience-item p-4 mb-4" style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 153, 255, 0.05) 100%); border-left: 4px solid #00d4ff; border-radius: 10px;">
+                        <h4 style="color: #00d4ff; font-weight: 700; margin-bottom: 0.5rem;">Full-Stack Software Engineer</h4>
+                        <p style="color: #888; margin-bottom: 1rem;"><strong>Industrial Computing Engineering | Jun 2024 – Present</strong></p>
+                        <ul style="color: #e0e0e0;">
+                            <li>Developed and maintained a government publication system, improving workflow efficiency</li>
+                            <li>Designed and integrated RESTful APIs for internal and external system communication</li>
+                            <li>Implemented third-party integrations and SDKs to extend system capabilities</li>
+                            <li>Automated deployments using GitLab CI/CD, improving release efficiency</li>
+                            <li>Monitored and maintained Linux-based systems to ensure uptime and performance</li>
+                            <li>Integrated AI/NLP tools using PyTorch and transformers for automation</li>
+                            <li>Collaborated with engineering and product stakeholders to deliver scalable solutions</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="contact-box p-3 mb-3 border rounded">
-                    <h4 style="color: #fff;">LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/yourprofile" class="text-decoration-none" target="_blank">LinkedIn Profile</a></p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="contact-box p-3 mb-3 border rounded">
-                    <h4 style="color: #fff;">GitHub</h4>
-                    <p><a href="https://github.com/austin11101" class="text-decoration-none" target="_blank">GitHub Profile</a></p>
-                </div>
-            </div>
-            <!-- Add more contact details as needed -->
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="contact.php" method="POST">
 
-            <input type="text" name="name" placeholder="Your Name" required >
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" name="send">Send</button>
-
-        </form>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #00d4ff;">Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card" style="background: #0f0f1e; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15); transition: all 0.3s; border: 2px solid rgba(0, 212, 255, 0.3);">
+                        <img src="https://images.unsplash.com/photo-1633356713072-9f23cbccc0ff?w=400&q=80" alt="Real-time Notification" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Real-time Notification System</h4>
+                            <p style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;"><strong>React • Express • Firebase • SQLite</strong></p>
+                            <p style="color: #e0e0e0; font-size: 0.95rem;">Built a real-time notification system with live updates and seamless data synchronization across multiple clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card" style="background: #0f0f1e; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15); transition: all 0.3s; border: 2px solid rgba(0, 212, 255, 0.3);">
+                        <img src="https://images.unsplash.com/photo-1677442d019cecf8978785ecf1da4e5f?w=400&q=80" alt="AI/NLP Application" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">AI/NLP Text Processing</h4>
+                            <p style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;"><strong>PyTorch • Transformers • Flask • React</strong></p>
+                            <p style="color: #e0e0e0; font-size: 0.95rem;">Integrated AI/NLP models into web applications for intelligent text processing and automation tasks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card" style="background: #0f0f1e; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15); transition: all 0.3s; border: 2px solid rgba(0, 212, 255, 0.3);">
+                        <img src="https://images.unsplash.com/photo-1633356713072-9f23cbccc0ff?w=400&q=80" alt="Full-Stack App" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Full-Stack Application Suite</h4>
+                            <p style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;"><strong>React • Express.js • MongoDB • REST APIs</strong></p>
+                            <p style="color: #e0e0e0; font-size: 0.95rem;">Developed full-stack applications with clear API architecture and scalable design patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="text-center p-2 bg-dark text-white">
-        <p>&copy; 2024 Austin Baloyi</p>
+    <!-- Education Section -->
+    <section class="py-5" style="background: #0f0f1e; color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #00d4ff;">Education</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="education-card p-4" style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 153, 255, 0.05) 100%); border-left: 4px solid #00d4ff; border-radius: 10px;">
+                        <h5 style="color: #00d4ff; margin-bottom: 0.5rem;">Tshwane University of Technology</h5>
+                        <p style="color: #888; font-size: 0.9rem; margin-bottom: 0.5rem;">2019 - 2024</p>
+                        <p style="color: #e0e0e0;">National Diploma in Information Technology<br><small style="color: #888;">Specialization: Multimedia Development</small></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="education-card p-4" style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 153, 255, 0.05) 100%); border-left: 4px solid #00d4ff; border-radius: 10px;">
+                        <h5 style="color: #00d4ff; margin-bottom: 0.5rem;">CTU Training Institution</h5>
+                        <p style="color: #888; font-size: 0.9rem; margin-bottom: 0.5rem;">May 2024</p>
+                        <p style="color: #e0e0e0;">MS-900 Microsoft 365 Fundamentals Certificate</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="education-card p-4" style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 153, 255, 0.05) 100%); border-left: 4px solid #00d4ff; border-radius: 10px;">
+                        <h5 style="color: #00d4ff; margin-bottom: 0.5rem;">EPP MHINGA HIGH SCHOOL</h5>
+                        <p style="color: #888; font-size: 0.9rem; margin-bottom: 0.5rem;">2016 - 2018</p>
+                        <p style="color: #e0e0e0;">Grade 12 Class Representative</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact" class="py-5" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #00d4ff;">Get In Touch</h2>
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="contact-box p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fas fa-envelope" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">Email</h4>
+                        <p><a href="mailto:austinbal28@gmail.com" style="color: #e0e0e0; text-decoration: none;">austinbal28@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="contact-box p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fab fa-linkedin" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/yourprofile" style="color: #e0e0e0; text-decoration: none;" target="_blank">View Profile</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="contact-box p-4" style="background: rgba(0, 212, 255, 0.1); border: 2px solid #00d4ff; border-radius: 15px;">
+                        <i class="fab fa-github" style="font-size: 2.5rem; color: #00d4ff; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #00d4ff;">GitHub</h4>
+                        <p><a href="https://github.com/austin11101" style="color: #e0e0e0; text-decoration: none;" target="_blank">austin11101</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="p-5" style="background: rgba(0, 212, 255, 0.05); border: 2px solid rgba(0, 212, 255, 0.3); border-radius: 15px;">
+                        <h3 class="mb-4" style="color: #00d4ff;">Send Me a Message</h3>
+                        <form action="contact.php" method="POST">
+                            <div class="form-group mb-3">
+                                <input type="text" name="name" placeholder="Your Name" required class="form-control" style="background: #1a1a2e; border: 1px solid #00d4ff; color: white; padding: 12px;">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="email" name="email" placeholder="Your Email" required class="form-control" style="background: #1a1a2e; border: 1px solid #00d4ff; color: white; padding: 12px;">
+                            </div>
+                            <div class="form-group mb-3">
+                                <textarea name="message" placeholder="Your Message" required class="form-control" rows="5" style="background: #1a1a2e; border: 1px solid #00d4ff; color: white; padding: 12px;"></textarea>
+                            </div>
+                            <button type="submit" name="send" class="btn btn-lg w-100" style="background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%); color: white; border: none; font-weight: 600; padding: 12px;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4" style="background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%); color: white; text-align: center; border-top: 2px solid #00d4ff;">
+        <div class="container">
+            <p style="margin-bottom: 0.5rem;">&copy; 2024 Austin Baloyi. All rights reserved.</p>
+            <p style="color: #888; margin-bottom: 0;">Built with <span style="color: #00d4ff;">React</span> • <span style="color: #00d4ff;">Flask</span> • <span style="color: #00d4ff;">Bootstrap</span></p>
+        </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
